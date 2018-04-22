@@ -16,6 +16,7 @@ write.csv(AllNICrimeData, file = "C:/LYIT/Data Science/Practicals/Data/AllNICrim
 
 #Task 2:
 AllNICrimeData <- AllNICrimeData[, - c(1, 3, 4, 8, 9, 11, 12)]
+head(AllNICrimeData, 10)
 str(AllNICrimeData)
 
 #Task3:
@@ -72,6 +73,7 @@ postcode_data <- read.csv("C:/LYIT/Data Science/Practicals/Data/CLeanNIPostcodeD
 library(dplyr)
 postcode_data <- unique(postcode_data)
 postcode_tbl <- tbl_df(postcode_data[, c(3, 8)])
+class(postcode_tbl)
 str(postcode_tbl)
 find_a_postcode <- function(location) {
     filtered_row <- filter(postcode_tbl, Primary.Thorfare == location)
@@ -89,7 +91,7 @@ head(postcodes)
 #Task7
 AllNICrimeData$Postcode <- postcodes
 str(AllNICrimeData)
-head(AllNICrimeData)
+head(AllNICrimeData, 10)
 
 
 #Task8

@@ -19,14 +19,12 @@ q <- c(3, 4)
 p + q
 
 ls()
-install.packages("swirl")
 library(swirl)
 install_course_zip("C:/LYIT/Data Science/Software/swirl_courses-master.zip", multi = TRUE, which_course = "R Programming")
 install_course("C:/LYIT/Data Science/Software/Getting_and_Cleaning_Data.swc")
 swirl::install_course("Getting and Cleaning Data")
 
 swirl()
-install.packages("dplyr")
 library(dplyr)
 remotes::install_github()
 packageVersion("dplyr")
