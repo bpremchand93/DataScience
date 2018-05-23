@@ -17,6 +17,8 @@ combine_results <- function(file_list) {
 new_data <- combine_results(csv_file_list)
 str(new_data)
 
+write.csv(new_data,"C:/Users/Goutham Siddhaarth/Source/Repos/DataScience/test project/Data/Lotto.csv")
+
 a <- matrix(1:9, 3)
 b <- matrix(1:5)
 b
